@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>GreyHound</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <!-- custom color -->
+        <link rel="stylesheet" href="mystyle.css">
+        <!-- datepicker -->
+        <link rel="stylesheet" href="datepicker/css/datepicker.css">
+        <!-- Optional theme -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+        <!-- jquery -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+
+        <!-- Latest compiled and minified JavaScript -->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+        <!--datepicker js -->
+        <script src="datepicker/js/bootstrap-datepicker.js"></script>
+
+        <script>
+            $('#datepicker').datepicker('update');
+        </script>
+    </head>
+    <body>
+
+        <div class="container">
+
+            <div class="row">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Enter your arrival, destination places and date of your journey
+                    </div>
+                    <div class="panel-body">
+                        <div class="group-inline">
+                            <label> From</label> 
+                            <div class="dropdown">
+                                <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                    Enter the arrive city
+                                    <span class="caret"></span>
+                                </button>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <li><a href="#">Kansas</a></li>
+                                    <li><a href="#">Omaha</a></li>
+                                    <li><a href="#">Iowa</a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <label> To: </label>  
+                        <div class="dropdown">
+                            <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                Enter destination city
+                                <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="#">Chicago</a></li>
+                                <li><a href="#">New York</a></li>
+                                <li><a href="#">California</a></li>
+
+                            </ul>
+                        </div>
+
+                        <label> Date of journey </label>
+                        <div class="input-append date" id="dp3"  data-date-format="dd-mm-yyyy">
+                            <input id="datepicker" class="span2" size="16" type="text" >
+                            <span class="add-on"><i class="icon-th"></i></span>
+                        </div>                        
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </body>
+</html>
